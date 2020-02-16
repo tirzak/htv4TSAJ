@@ -3,10 +3,12 @@ package com.multimeleon.pjapples.automldemo
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Bitmap.CompressFormat
+import android.hardware.Camera
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Base64
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +26,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.io.ByteArrayOutputStream
 import java.io.IOException
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +53,21 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(galleryIntent, GALLERY)
     }
 
+    private fun openCamera(){
+            ;
+
+    }
+    val REQUEST_IMAGE_CAPTURE = 1
+
+    private fun dispatchTakePictureIntent() {
+        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
+            takePictureIntent.resolveActivity(packageManager)?.also {
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+            }
+        }
+    }
+
+
     private fun showPictureDialog() {
         val pictureDialog = AlertDialog.Builder(this)
         pictureDialog.setTitle("Select Action")
@@ -59,6 +77,7 @@ class MainActivity : AppCompatActivity() {
         ) { dialog, which ->
             when (which) {
                 0 -> choosePhotoFromGallary()
+                1 -> openCamera()
 
             }
         }
