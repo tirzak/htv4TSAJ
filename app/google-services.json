@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "357086778384",
+    "firebase_url": "https://hackthevalley4.firebaseio.com",
+    "project_id": "hackthevalley4",
+    "storage_bucket": "hackthevalley4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357086778384:android:e1eae562ff1a17ad8d2695",
+        "android_client_info": {
+          "package_name": "com.flutter_apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357086778384-bupndlcka9n0srnrjtl8far2s3najoov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnS39cM2Ua5UcPF10dZzj6AztG_noBRI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357086778384-bupndlcka9n0srnrjtl8far2s3najoov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357086778384:android:853db923929ccca88d2695",
+        "android_client_info": {
+          "package_name": "com.htv4.ml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357086778384-bupndlcka9n0srnrjtl8far2s3najoov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnS39cM2Ua5UcPF10dZzj6AztG_noBRI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357086778384-bupndlcka9n0srnrjtl8far2s3najoov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357086778384:android:f10ae7f24332ff308d2695",
+        "android_client_info": {
+          "package_name": "com.multimeleon.pjapples.automldemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357086778384-bupndlcka9n0srnrjtl8far2s3najoov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnS39cM2Ua5UcPF10dZzj6AztG_noBRI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357086778384-bupndlcka9n0srnrjtl8far2s3najoov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
