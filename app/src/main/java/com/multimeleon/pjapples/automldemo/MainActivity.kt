@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             Intent.ACTION_PICK,
             MediaStore.Images.Media.EXTERNAL_CONTENT_URI
         )
+        result_textview.setText("")
 
         startActivityForResult(galleryIntent, GALLERY)
     }
@@ -116,9 +117,15 @@ class MainActivity : AppCompatActivity() {
             .addOnSuccessListener { labels ->
                 // Task completed successfully
                 // ...
+                val max=0;
+                var text="";
                 for (label in labels) {
-                    val text = label.text
+                    if(label.confidence>max){
+                       text =label.text;
+                    }
+
                     val confidence = label.confidence
+
 
                     result_textview.text = " ${result_textview.text} $text $confidence \n"
                 }
@@ -206,6 +213,7 @@ class MainActivity : AppCompatActivity() {
                                 ) {
                                     if (response!!.isSuccessful) {
                                         Log.d("Hello", response.body().toString())
+                                        result_textview.setText("")
                                         result_textview.text =
                                             "${response.body()?.items?.first()?.displayName} Score: ${(response.body()?.items?.first()?.classification?.let { it.score * 100 })}"
                                     }
